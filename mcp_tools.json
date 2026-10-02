@@ -1,0 +1,32 @@
+[
+    {
+        "name": "list_inventory_items",
+        "description": "Retrieves a list of inventory items/products from Zoho Inventory. Can optionally search by item name.",
+        "parameters": {
+            "type": "object",
+            "properties": {
+                "name": {
+                    "type": "string",
+                    "description": "Optional product name to filter the inventory list."
+                }
+            },
+            "required": []
+        }
+    },
+    {
+        "name": "get_item_details",
+        "description": "Retrieves the full details of a specific Zoho Inventory item using its unique ID.",
+        "parameters": {
+            "type": "object",
+            "properties": {
+                "item_id": {
+                    "type": "string",
+                    "description": "The unique ID of the inventory item."
+                }
+            },
+            "required": [
+                "item_id"
+            ]
+        }
+    }
+]
